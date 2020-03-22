@@ -1,0 +1,233 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+/* global CSS */
+
+.backGroundImg{
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+
+a{
+    transition: ease-out .5s;
+    -webkit-transition: ease-out .5s;
+    -moz-transition: ease-out .5s;
+    -ms-transition: ease-out .5s;
+    -o-transition: ease-out .5s;
+}
+
+/* global CSS */
+
+
+
+/* Nav */
+
+nav{
+    position: fixed;
+    width: 80px;
+    background: #333;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 9999;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 36px;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li a:hover{
+    color: #ddd;
+}
+
+nav + div, nav + section{
+    /* width: calc(100% - 80px); */
+    padding-left: 80px;
+    min-height: 100vh;
+}
+
+/* Nav */
+
+/* splashHolder */
+
+.splashHolder{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* background-color: #666; */
+}
+
+.splashHolder .backGroundImg{
+    width: 110%;
+    height: 110%;
+    opacity: .8;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.blurSplash{
+    filter: blur(13px);
+    -webkit-filter: blur(13px);
+    width: 130% !important;
+}
+
+.enterBtn{
+    background-color: #fff;
+    z-index: 111;
+    transition: ease-out .5s;
+    -webkit-transition: ease-out .5s;
+    -moz-transition: ease-out .5s;
+    -ms-transition: ease-out .5s;
+    -o-transition: ease-out .5s;
+    color: #333;
+    padding: 10px 80px;
+    border-radius: 150px;
+    border: none;
+}
+
+.songsChain li {
+    list-style: none;
+    width: 140px;           
+    vertical-align: top;
+    line-height: 10px;
+    word-break: break-word;
+    cursor: pointer;
+}
+
+.SongimgHolder {
+    position: relative;
+    overflow: hidden;
+    height: 140px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+.songsChain li h5{
+    color: #888;
+    font-size: 12px;
+}
+
+.songsChain li small{
+    font-style: italic;
+    color: #bfbcbc;
+    font-size: 10px;
+}
+
+/* splashHolder */
+
+
+
+
+
+/* temporary */
+
+
+
+.playing{
+    position: fixed;
+    width: calc(100% - 80px);
+    bottom: 0;
+    right: 0px;
+}
+
+
+.songsChain{
+    padding-bottom: 150px;
+}
+
+.playing > button{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    background: none;
+    border: none;
+    color: red;
+}
+
+.uploaderSection form {
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 99999;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.uploaderSection form input{
+    min-height: 3rem;
+}
+
+.uploaderSection form .form-control{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+.uploaderSection form .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+  }
+  .uploaderSection form .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+  }
+  .uploaderSection form .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+  }
+  .uploaderSection form .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+  }
+
+
+.fullvh{
+    min-height: 100vh;
+}
+
+.uploaderSection .fullvh{
+    overflow: hidden;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.uploaderTag {
+    padding-top: 1em;
+    font-size: 11em;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.13);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+.fullvh:hover .uploaderTag{
+    color: rgba(255, 255, 255, 0.9);
+    padding-top: 0;
+    text-shadow: 0 0 0 #000000;
+}
